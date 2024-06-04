@@ -1,0 +1,34 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/us_states.topojson",
+      "format": {"type": "topojson", "feature": "us_states"}
+    },
+    "transform": [
+      {
+        "lookup": "properties.alpha_code",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/4/map_data/us_states_real_median_income.csv"
+          },
+          "key": "alpha_id",
+          "fields": ["value"]
+        }
+      }
+    ],
+    "projection": {"type": "albersUsa"},
+    "mark": "geoshape",
+    "encoding": {
+      "color": {"field": "value", "type": "quantitative", "legend":{
+        "title":"","format":"$,d"
+      }}, 
+      "tooltip":[
+        {"field":"properties.name","title":"State"},
+        {"field":"value","format":"$,","title":"Medium wage"
+      }]
+  
+    },
+    "title":{"text":"US states","subtitle":"Medium wage","anchor":"start"} 
+  }
