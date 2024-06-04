@@ -17,7 +17,7 @@
       "mark": "line",
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
-        "y": {"field": "% of total students", "type": "quantitative", }
+        "y": {"field": "% of total students", "type": "quantitative"}
       }
      }
   ]
