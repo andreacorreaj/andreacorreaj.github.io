@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreacorreaj/andreacorreaj.github.io/main/Schools_data.csv"
+  },
+  "resolve":{"scale":{"y": "independent"}},
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "Total", "type": "quantitative"}
+      }
+    },
+     {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "% of total students", "type": "quantitative", }
+      }
+     }
+  ]
+}
