@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {"School": "State-funded", "Year": "2003-04", "Value": 5853},
+      {"School": "State-funded", "Year": "2009-10", "Value": 7202},
+      {"School": "Private", "Year": "2003-04", "Value": 7287},
+      {"School": "Private", "Year": "2009-10", "Value": 10095}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "xOffset": {"field": "School"},
+    "color": {"field": "School"}
+  }
+}
