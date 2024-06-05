@@ -7,14 +7,16 @@
   "resolve":{"scale":{"y": "independent"}},
   "layer": [
     {
-      "mark": "bar",
+      "mark": {"type":"bar",
+      "color":"#2680b4"},
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
-        "y": {"field": "Total", "type": "quantitative"}
+        "y": {"field": "Number of students in private schools", "type": "quantitative"}
       }
     },
      {
-      "mark": "line",
+      "mark": {"type":"line",
+      "color":"#c01b1b"},
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "% of total students", "type": "quantitative"}
