@@ -1,6 +1,19 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
+    "title":{
+      "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0,
+      "text":"School fess",
+      "subtitle":["Fess per pupil","Source: ISC and IFS"]},
+  "width":300,
+  "height":300,
   "data": {
     "values": [
       {"School": "State-funded", "Year": "2003-04", "Value": 5853},
@@ -15,9 +28,42 @@
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Year", "type": "ordinal"},
-    "y": {"field": "Value", "type": "quantitative", "title":"Fees per pupil"},
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "labelFontSize": 11,
+        "title":""
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title":"Fees per pupil",
+      "axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "gridDash": [1,5],
+        "labelFontSize": 11,
+        "title":""
+      }
+    },
     "xOffset": {"field": "School"},
-    "color": {"field":"School"}
+    "color": {
+      "field":"School",
+      "scale": {
+        "range": ["#e6224b", "#36b7b4"]
+      },
+      "legend": {
+        "orient": "top-left",
+        "offset": 10,
+        "columns": 2,
+        "title": "",
+        "labelFontSize": 11,
+        "labelColor": "#676A86"
+      }
+    }
   }
 }
