@@ -46,6 +46,10 @@
         "gridDash": [1,5],
         "labelFontSize": 11,
         "title":""
+      },
+      "scale":{
+        "domain": [500000, 580000],
+        "clamp":true
       }}
       }
     },
@@ -72,6 +76,10 @@
         "gridDash": [1,5],
         "labelFontSize": 11,
         "title":""
+        
+      },
+      "scale":{
+        "domain": [4, 7]
       }}
       }
      }
