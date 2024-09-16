@@ -1,0 +1,145 @@
+{
+  "config": {
+    "axisX": {
+      "labelPadding": 6,
+      "tickOpacity": 0,
+      "title": null,
+      "grid": false,
+      "ticks": false,
+      "labelSeparation": 10
+    },
+    "axisY": {"title": null, "grid": false, "tickOpacity": 0},
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic",
+      "anchor": "start",
+      "color": "black"
+    },
+    "view": {"stroke": "transparent"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "color": {"value": "rgb(9, 32, 95)"},
+        "x": {"axis": {"labelAngle": 0}, "field": "Year", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": -5,
+        "fontSize": 12,
+        "text": {"expr": "'Debt'"}
+      },
+      "encoding": {
+        "color": {"value": "rgb(9, 32, 95)"},
+        "x": {"axis": {"labelAngle": 0}, "field": "Year", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": "year(datum.Year) == 2029"}]
+    },
+    {
+      "data": {"name": "data-bfc671b4add3b57573373bb5b12b42c4"},
+      "mark": {"type": "rect", "color": "rgb(9, 32, 95)", "opacity": 0.1},
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "x2": {"field": "Year_end"},
+        "y": {"value": 0},
+        "y2": {"value": 300}
+      }
+    },
+    {
+      "data": {"name": "data-591422bd35f80e58c1c3a9ed28f2aad4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": 5,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"value": "rgb(9, 32, 95)"},
+        "text": {"field": "Value", "format": ".0%", "type": "quantitative"},
+        "x": {"axis": {"labelAngle": 0}, "field": "Year", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": "year(datum.Year) == 2029"}]
+    }
+  ],
+  "data": {"name": "data-591422bd35f80e58c1c3a9ed28f2aad4"},
+  "height": 300,
+  "title": {
+    "text": "UK: Government Debt",
+    "subtitle": [
+      "Gross debt, % of GDP",
+      "Source: IMF, Forecast Shaded",
+      ""
+    ]
+  },
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-591422bd35f80e58c1c3a9ed28f2aad4": [
+      {"Country": "UK", "Year": "1995", "Value": 0.43659},
+      {"Country": "UK", "Year": "1996", "Value": 0.43714},
+      {"Country": "UK", "Year": "1997", "Value": 0.44132},
+      {"Country": "UK", "Year": "1998", "Value": 0.4197},
+      {"Country": "UK", "Year": "1999", "Value": 0.37686},
+      {"Country": "UK", "Year": "2000", "Value": 0.37686},
+      {"Country": "UK", "Year": "2001", "Value": 0.34958},
+      {"Country": "UK", "Year": "2002", "Value": 0.35735},
+      {"Country": "UK", "Year": "2003", "Value": 0.36764},
+      {"Country": "UK", "Year": "2004", "Value": 0.39802},
+      {"Country": "UK", "Year": "2005", "Value": 0.41},
+      {"Country": "UK", "Year": "2006", "Value": 0.42058},
+      {"Country": "UK", "Year": "2007", "Value": 0.43174},
+      {"Country": "UK", "Year": "2008", "Value": 0.50827},
+      {"Country": "UK", "Year": "2009", "Value": 0.64915},
+      {"Country": "UK", "Year": "2010", "Value": 0.7586},
+      {"Country": "UK", "Year": "2011", "Value": 0.81425},
+      {"Country": "UK", "Year": "2012", "Value": 0.84483},
+      {"Country": "UK", "Year": "2013", "Value": 0.85316},
+      {"Country": "UK", "Year": "2014", "Value": 0.87094},
+      {"Country": "UK", "Year": "2015", "Value": 0.87867},
+      {"Country": "UK", "Year": "2016", "Value": 0.87825},
+      {"Country": "UK", "Year": "2017", "Value": 0.86723},
+      {"Country": "UK", "Year": "2018", "Value": 0.86345},
+      {"Country": "UK", "Year": "2019", "Value": 0.85658},
+      {"Country": "UK", "Year": "2020", "Value": 1.058},
+      {"Country": "UK", "Year": "2021", "Value": 1.05196},
+      {"Country": "UK", "Year": "2022", "Value": 1.00432},
+      {"Country": "UK", "Year": "2023", "Value": 1.01084},
+      {"Country": "UK", "Year": "2024", "Value": 1.04347},
+      {"Country": "UK", "Year": "2025", "Value": 1.06407},
+      {"Country": "UK", "Year": "2026", "Value": 1.07335},
+      {"Country": "UK", "Year": "2027", "Value": 1.08273},
+      {"Country": "UK", "Year": "2028", "Value": 1.09231},
+      {"Country": "UK", "Year": "2029", "Value": 1.10081}
+    ],
+    "data-bfc671b4add3b57573373bb5b12b42c4": [
+      {"Year": "2024-01-01", "Year_end": "2029-01-01"}
+    ]
+  }
+}
