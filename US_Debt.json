@@ -1,0 +1,135 @@
+{
+  "config": {
+    "axisX": {
+      "labelPadding": 6,
+      "tickOpacity": 0,
+      "title": null,
+      "grid": false,
+      "ticks": false,
+      "labelSeparation": 10
+    },
+    "axisY": {"title": null, "grid": false, "tickOpacity": 0},
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic",
+      "anchor": "start",
+      "color": "black"
+    },
+    "view": {"stroke": "transparent"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "color": {"value": "rgb(9, 32, 95)"},
+        "x": {"axis": {"labelAngle": 0}, "field": "Year", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": -5,
+        "fontSize": 12,
+        "text": {"expr": "'Debt'"}
+      },
+      "encoding": {
+        "color": {"value": "rgb(9, 32, 95)"},
+        "x": {"axis": {"labelAngle": 0}, "field": "Year", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": "year(datum.Year) == 2029"}]
+    },
+    {
+      "data": {"name": "data-bfc671b4add3b57573373bb5b12b42c4"},
+      "mark": {"type": "rect", "color": "rgb(9, 32, 95)", "opacity": 0.1},
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "x2": {"field": "Year_end"},
+        "y": {"value": 0},
+        "y2": {"value": 300}
+      }
+    },
+    {
+      "data": {"name": "data-591422bd35f80e58c1c3a9ed28f2aad4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": 5,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"value": "rgb(9, 32, 95)"},
+        "text": {"field": "Value", "format": ".0%", "type": "quantitative"},
+        "x": {"axis": {"labelAngle": 0}, "field": "Year", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": "year(datum.Year) == 2029"}]
+    }
+  ],
+  "data": {"name": "data-591422bd35f80e58c1c3a9ed28f2aad4"},
+  "height": 300,
+  "title": {
+    "text": "US: Government Debt",
+    "subtitle": [
+      "Gross debt, % of GDP",
+      "Source: IMF, Forecast Shaded",
+      ""
+    ]
+  },
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-591422bd35f80e58c1c3a9ed28f2aad4": [
+      {"Country": "US", "Year": "2005", "Value": 0.6545},
+      {"Country": "US", "Year": "2006", "Value": 0.64186},
+      {"Country": "US", "Year": "2007", "Value": 0.6458},
+      {"Country": "US", "Year": "2008", "Value": 0.73428},
+      {"Country": "US", "Year": "2009", "Value": 0.86595},
+      {"Country": "US", "Year": "2010", "Value": 0.95157},
+      {"Country": "US", "Year": "2011", "Value": 0.99493},
+      {"Country": "US", "Year": "2012", "Value": 1.03059},
+      {"Country": "US", "Year": "2013", "Value": 1.04335},
+      {"Country": "US", "Year": "2014", "Value": 1.04228},
+      {"Country": "US", "Year": "2015", "Value": 1.104646},
+      {"Country": "US", "Year": "2016", "Value": 1.06563},
+      {"Country": "US", "Year": "2017", "Value": 1.05512},
+      {"Country": "US", "Year": "2018", "Value": 1.06828},
+      {"Country": "US", "Year": "2019", "Value": 1.108074},
+      {"Country": "US", "Year": "2020", "Value": 1.31991},
+      {"Country": "US", "Year": "2021", "Value": 1.24956},
+      {"Country": "US", "Year": "2022", "Value": 1.20026},
+      {"Country": "US", "Year": "2023", "Value": 1.22148},
+      {"Country": "US", "Year": "2024", "Value": 1.23256},
+      {"Country": "US", "Year": "2025", "Value": 1.26552},
+      {"Country": "US", "Year": "2026", "Value": 1.28893},
+      {"Country": "US", "Year": "2027", "Value": 1.30703},
+      {"Country": "US", "Year": "2028", "Value": 1.32574},
+      {"Country": "US", "Year": "2029", "Value": 1.33876}
+    ],
+    "data-bfc671b4add3b57573373bb5b12b42c4": [
+      {"Year": "2024-01-01", "Year_end": "2029-01-01"}
+    ]
+  }
+}
