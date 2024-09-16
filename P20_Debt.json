@@ -1,0 +1,74 @@
+{
+  "config": {
+    "axisX": {
+      "labelPadding": 6,
+      "tickOpacity": 0,
+      "title": null,
+      "grid": false,
+      "ticks": false,
+      "labelSeparation": 10
+    },
+    "axisY": {"title": null, "grid": false, "tickOpacity": 0},
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic",
+      "anchor": "start",
+      "color": "black"
+    },
+    "view": {"stroke": "transparent"}
+  },
+"layer":[      
+  {"mark": {"type": "bar", "color": "rgb(9, 32, 95)"}},
+  {"mark": {"type": "text", "align": "left", "baseline": "middle","dx": 3},
+   "encoding": {
+      "text": {"field": "Value", "type": "quantitative","format": ".0f"}
+    }}
+  ],
+
+      "encoding": {
+        "x": {
+          "axis": {"labelExpr": "datum.value+'%'"},
+          "field": "Value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {"title": null},
+          "field": "Country",
+          "sort": "-x",
+          "title": "Country",
+          "type": "nominal"
+        }
+      },
+  "width": 500,
+  "height": 300,
+
+  "data": {"values": [
+      {"Country": "Argentina", "Value": 154.536}, 
+      {"Country": "Australia", "Value": 49.381}, 
+      {"Country": "Brazil", "Value": 84.675}, 
+      {"Country": "Canada", "Value": 107.129}, 
+      {"Country": "China", "Value": 83.644}, 
+      {"Country": "European Union", "Value": 31.20676}, 
+      {"Country": "France", "Value": 110.635}, 
+      {"Country": "Germany", "Value": 64.278}, 
+      {"Country": "India", "Value": 82.748}, 
+      {"Country": "Indonesia", "Value": 39.894}, 
+      {"Country": "Italy", "Value": 137.28}, 
+      {"Country": "Japan", "Value": 252.363}, 
+      {"Country": "Korea", "Value": 55.183}, 
+      {"Country": "Mexico", "Value": 53.095}, 
+      {"Country": "Russia", "Value": 19.657}, 
+      {"Country": "Saudi Arabia", "Value": 26.227}, 
+      {"Country": "South Africa", "Value": 73.929}, 
+      {"Country": "Turkey", "Value": 28.882}, 
+      {"Country": "United Kingdom", "Value": 101.084}, 
+      {"Country": "United States", "Value": 122.148}
+]
+},
+  "title": {
+    "text": "Government Debt",
+    "subtitle": ["2023, P20 Countries, % of GDP", "Source: IMF", ""]
+  }
+}
