@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+    "text": "Index of production - October 2024 ",
+    "subtitle": [""],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "height": 300,
+  "width": 400,
+  "config": {
+    "font": "Circular Std",
+    "view": {"stroke": "transparent"},
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+
+  "data": {
+    "values": [
+      {"Date": "2023/10", "Change": -2.2,"Industry":"Mining and quarrying"}, 
+      {"Date": "2023/11", "Change": 1,"Industry":"Mining and quarrying"}, 
+      {"Date": "2023/12", "Change": -1.2,"Industry":"Mining and quarrying"},
+      {"Date": "2024/01", "Change": -1, "Industry":"Mining and quarrying"}, 
+      {"Date": "2024/02", "Change": -1.4,"Industry":"Mining and quarrying"}, 
+      {"Date": "2024/03", "Change": 0.8,"Industry":"Mining and quarrying"},
+      {"Date": "2024/04", "Change": 0.9,"Industry":"Mining and quarrying"}, 
+      {"Date": "2024/05", "Change": -0.9,"Industry":"Mining and quarrying"}, 
+      {"Date": "2024/06", "Change": -2.5,"Industry":"Mining and quarrying"}, 
+      {"Date": "2024/07", "Change": 4.5,"Industry":"Mining and quarrying"},
+      {"Date": "2024/08", "Change": -5.3,"Industry":"Mining and quarrying"},
+      {"Date": "2024/09", "Change": 3.7,"Industry":"Mining and quarrying"},
+      {"Date": "2024/10", "Change": -3.1,"Industry":"Mining and quarrying"},
+            {"Date": "2023/10", "Change": -1.4,"Industry":"Manufacturing"}, 
+      {"Date": "2023/11", "Change": 0.6,"Industry":"Manufacturing"}, 
+      {"Date": "2023/12", "Change": 1,"Industry":"Manufacturing"},
+      {"Date": "2024/01", "Change": -0.8, "Industry":"Manufacturing"}, 
+      {"Date": "2024/02", "Change": 0.9,"Industry":"Manufacturing"}, 
+      {"Date": "2024/03", "Change": 0.3,"Industry":"Manufacturing"},
+      {"Date": "2024/04", "Change": -1.7,"Industry":"Manufacturing"}, 
+      {"Date": "2024/05", "Change": 0.1,"Industry":"Manufacturing"}, 
+      {"Date": "2024/06", "Change": 1.4,"Industry":"Manufacturing"}, 
+      {"Date": "2024/07", "Change": -1.3,"Industry":"Manufacturing"},
+      {"Date": "2024/08", "Change": 1.3,"Industry":"Manufacturing"},
+      {"Date": "2024/09", "Change": 1,"Industry":"Manufacturing"},
+      {"Date": "2024/10", "Change": -0.6,"Industry":"Manufacturing"},
+            {"Date": "2023/10", "Change": -4.9,"Industry":"Electricity and gas"}, 
+      {"Date": "2023/11", "Change": -0.3,"Industry":"Electricity and gas"}, 
+      {"Date": "2023/12", "Change": 1.3,"Industry":"Electricity and gas"},
+      {"Date": "2024/01", "Change": -0.4, "Industry":"Electricity and gas"}, 
+      {"Date": "2024/02", "Change": 1.3,"Industry":"Electricity and gas"}, 
+      {"Date": "2024/03", "Change": 0.3,"Industry":"Electricity and gas"},
+      {"Date": "2024/04", "Change": 1.3,"Industry":"Electricity and gas"}, 
+      {"Date": "2024/05", "Change": -2.3,"Industry":"Electricity and gas"}, 
+      {"Date": "2024/06", "Change": 0,"Industry":"Electricity and gas"}, 
+      {"Date": "2024/07", "Change": -1.9,"Industry":"Electricity and gas"},
+      {"Date": "2024/08", "Change": 0.9,"Industry":"Electricity and gas"},
+      {"Date": "2024/09", "Change": -1.9,"Industry":"Electricity and gas"},
+      {"Date": "2024/10", "Change": 1.4,"Industry":"Electricity and gas"},
+            {"Date": "2023/10", "Change": 0.2,"Industry":"Water supply and sewerage"}, 
+      {"Date": "2023/11", "Change": -1.2,"Industry":"Water supply and sewerage"}, 
+      {"Date": "2023/12", "Change": -0.7,"Industry":"Water supply and sewerage"},
+      {"Date": "2024/01", "Change": -1.9, "Industry":"Water supply and sewerage"}, 
+      {"Date": "2024/02", "Change": 0.6,"Industry":"Water supply and sewerage"}, 
+      {"Date": "2024/03", "Change": -0.4,"Industry":"Water supply and sewerage"},
+      {"Date": "2024/04", "Change": 2.1,"Industry":"Water supply and sewerage"}, 
+      {"Date": "2024/05", "Change": 0.1,"Industry":"Water supply and sewerage"}, 
+      {"Date": "2024/06", "Change": 0,"Industry":"Water supply and sewerage"}, 
+      {"Date": "2024/07", "Change": -1.4,"Industry":"Water supply and sewerage"},
+      {"Date": "2024/08", "Change": 1.1,"Industry":"Water supply and sewerage"},
+      {"Date": "2024/09", "Change": -0.7,"Industry":"Water supply and sewerage"},
+      {"Date": "2024/10", "Change": 0.5,"Industry":"Water supply and sewerage"},
+                  {"Date": "2023/10", "Change": -1.7,"Industry":"Productivity"}, 
+      {"Date": "2023/11", "Change": 0.4,"Industry":"Productivity"}, 
+      {"Date": "2023/12", "Change": 0.6,"Industry":"Productivity"},
+      {"Date": "2024/01", "Change": -0.9, "Industry":"Productivity"}, 
+      {"Date": "2024/02", "Change": 0.6,"Industry":"Productivity"}, 
+      {"Date": "2024/03", "Change": 0.3,"Industry":"Productivity"},
+      {"Date": "2024/04", "Change": -0.8,"Industry":"Productivity"}, 
+      {"Date": "2024/05", "Change": -0.2,"Industry":"Productivity"}, 
+      {"Date": "2024/06", "Change": 0.7,"Industry":"Productivity"}, 
+      {"Date": "2024/07", "Change": -0.7,"Industry":"Productivity"},
+      {"Date": "2024/08", "Change": 0.5,"Industry":"Productivity"},
+      {"Date": "2024/09", "Change": -0.5,"Industry":"Productivity"},
+      {"Date": "2024/10", "Change": -0.6,"Industry":"Productivity"}
+    ]
+  },
+
+  "layer":[
+    {
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal", "axis": {"labelAngle": 0}, "title": ""},
+    "y": { "aggregate":"sum", "field": "Change",
+      "type": "quantitative", "title": "Percentage change"},
+      "color": {
+      "field": "Industry",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Mining and quarrying", "Manufacturing", "Electricity and gas", "Water supply and sewerage"],
+        "range": ["#f4c245", "#e6224b", "#36b7b4", "#179fdb"]
+      },
+      "title": "Production industry"
+    }
+  }
+    },
+    {
+"mark": "line",
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal"},
+    "y": {"field": "Industry", "type": "quantitative"},
+    "color": {
+      "field": "Industry",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Productivity"],
+        "range": ["#122b39"]
+      }
+  }
+    }
+    }
+]
+}
